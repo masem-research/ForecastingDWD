@@ -1,0 +1,25 @@
+Package: ForecastingDWD
+Type: Package
+Title: 10-day weather forecasts of the German Weather Service on an hourly basis based on several coordinates 
+Version: 0.3.0
+Authors@R: c(person("Guido", "Moeser", role = c("aut", "cre"),
+                     email = "guido.moeser@masem.de"),
+              person("Elena", "Albrecht", role = "aut"))
+Maintainer: Guido Moeser <guido.moeser@masem.de>
+Description: 10-day weather forecasts of the German Weather Service on an hourly basis based on several coordinates
+License: Private
+Encoding: UTF-8
+LazyData: true
+Imports:
+    stats,
+    usethis,
+    openxlsx,
+    readxl,
+    XML,
+    tmap
+RoxygenNote: 7.1.2
+Depends: 
+    R (>= 4.0.0)
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
