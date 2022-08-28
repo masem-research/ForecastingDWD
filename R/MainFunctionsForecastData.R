@@ -116,7 +116,7 @@ DWDForecasting <- function(IDsDWDWeatherStations,
                                                           DataFrame = FALSE)
     }
   # Set Station ID
-  names(DWDStationVariables) <get- DWDStationInfoDF$name
+  names(DWDStationVariables) <- DWDStationInfoDF$name
   # Print
   print(DWDStationVariables)
 
