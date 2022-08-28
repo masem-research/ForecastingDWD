@@ -191,7 +191,7 @@ DWDForecasting <- function(IDsDWDWeatherStations,
       # Generate interactive chart with coordinates of weather stations
       m2 <- tmap::tm_shape(DWDStationInfoDF) + tmap::tm_symbols(col = "tomato", size = .5, scale = .5)
       # Save interactive map
-      tmap::tmap_save(tm = m2, filename = paste0(tempdir(),"\\", "WeatherStationMap.html"))
+      tmap::tmap_save(tm = m2, filename = paste0(tmapOutputDir,"\\", "WeatherStationMap.html"))
       }
     })
 
