@@ -130,7 +130,7 @@ DWDForecasting <- function(IDsDWDWeatherStations,
   # convert into a single data.frame/s and add column- and row-names
   dfVarInList <- data.frame(do.call(rbind, VarInList))
   colnames(dfVarInList) <- ParametersToExtract
-  rownames(dfVarInList) <- URLDataFrame$DWDWeatherStationID
+  dfVarInList$DWDWeatherStationID <- URLDataFrame$DWDWeatherStationID
   print(dfVarInList)
 
 
